@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('cartoon-living-room-interior-design-free-vector.jpg');
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    /* Voeg deze regels toe */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Zorg ervoor dat het lichaam volledig gevuld is */
+}
+.tamagotchi-container h1{
+    color: #bf0505;
+}
+.tamagotchi-container {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.tamagotchi-img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #bf0505;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+.status p {
+    font-size: 18px;
+    margin: 10px 0;
+}
