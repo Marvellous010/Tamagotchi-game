@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('cartoon-living-room-interior-design-free-vector.jpg');
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.tamagotchi-container h1{
+    color: #bf0505;
+    font-family: "Showcard Gothic"
+}
+.tamagotchi-container {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.tamagotchi-img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #bf0505;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Showcard Gothic"
+}
+
+.controls button:hover {
+    background-color: #191717;
+}
+
+.status p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.rood p{
+    color: #bf0505;
+    font-family: "Showcard Gothic"
+}
+.groen p{
+    color: green;
+    font-family: "Showcard Gothic"
+}
+.paars p{
+    color: purple;
+    font-family: "Showcard Gothic"
+}
+.gezondheid-status p{
+    color: cornflowerblue;
+    font-family: "Showcard Gothic"
+}
+.bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.tamagotchi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-box {
+    margin-left: 10px;
+    font-size: 20px;
+    color: purple;
+    font-family: "Showcard Gothic";
+}
+
+

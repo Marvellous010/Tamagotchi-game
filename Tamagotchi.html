@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="Tamagotchi.css">
+</head>
+
+<body>
+<div class="tamagotchi-container">
+    <h1>Mijn Tamagotchi</h1>
+    <div class="tamagotchi">
+        <img src="ABMovie_RedStanding.jpg" alt="Tamagotchi" class="tamagotchi-img">
+        <div class="chat-box">
+            <p class="chat-message">IK WIL GRAAG WAT LEUKS DOEN.</p>
+        </div>
+    </div>
+
+
+    <div class="controls">
+        <button class="btn-feed">Voeren</button>
+        <button class="btn-play">Spelen</button>
+        <button class="btn-clean">Schoonmaken</button>
+    </div>
+
+    <div class="status">
+        <div class="rood">
+            <p>Honger: 100</p>
+            <div class="bar-container">
+                <div class="bar" style="width: 100%; background-color: #bf0505;"></div>
+            </div>
+        </div>
+        <div class="groen">
+            <p>Slaap: 100</p>
+            <div class="bar-container">
+                <div class="bar" style="width: 100%; background-color: green;"></div>
+            </div>
+        </div>
+        <div class="paars">
+            <p>Plezier: 100</p>
+            <div class="bar-container">
+                <div class="bar" style="width: 100%; background-color: purple;"></div>
+            </div>
+        </div>
+        <div class="gezondheid-status">
+            <p>Gezondheid: 100</p>
+            <div class="bar-container">
+                <div class="bar" style="width: 100%; background-color: cornflowerblue;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<audio autoplay loop src="2019-12-11_-_Retro_Platforming_-_David_Fesliyan.mp3"></audio>
+<script src="Tamagotchi.js"></script>
+</body>
+</html>
