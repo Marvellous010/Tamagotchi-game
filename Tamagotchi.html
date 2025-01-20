@@ -5,24 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamagotchi</title>
     <link rel="stylesheet" href="Tamagotchi.css">
+    <link rel="icon" href="Femfoyou-Angry-Birds-Angry-bird.ico" type="image/png">
 </head>
-
 <body>
 <div class="tamagotchi-container">
     <h1>Mijn Tamagotchi</h1>
     <div class="tamagotchi">
-        <img src="ABMovie_RedStanding.jpg" alt="Tamagotchi" class="tamagotchi-img">
+        <img src="ABMovie_RedStanding-removebg-preview.png" alt="Tamagotchi" class="tamagotchi-img">
+        <div class="chat-box">
+            <p class="chat-message">IK WIL GRAAG WAT LEUKS DOEN.</p>
+        </div>
     </div>
+
     <div class="controls">
-        <button class="btn-feed">Voeren</button>
-        <button class="btn-play">Spelen</button>
-        <button class="btn-clean">Schoonmaken</button>
+        <button class="btn-feed">🍔 Voeren</button>
+        <button class="btn-play">⚽ Spelen</button>
+        <button class="btn-clean">💤 Rusten</button>
     </div>
+
     <div class="status">
-        <p>Honger: <span id="hunger">5</span></p>
-        <p>Geluk: <span id="happiness">5</span></p>
-        <p>Hygiëne: <span id="hygiene">5</span></p>
+        <div class="rood">
+            <p>Honger <span id="hunger-value">100</span>%</p>
+            <div class="bar-container">
+                <div class="bar" id="hunger-bar" style="width: 100%; background-color: #bf0505;"></div>
+            </div>
+        </div>
+        <div class="groen">
+            <p>Slaap <span id="sleep-value">100</span>%</p>
+            <div class="bar-container">
+                <div class="bar" id="sleep-bar" style="width: 100%; background-color: green;"></div>
+            </div>
+        </div>
+        <div class="paars">
+            <p>Plezier <span id="fun-value">100</span>%</p>
+            <div class="bar-container">
+                <div class="bar" id="fun-bar" style="width: 100%; background-color: purple;"></div>
+            </div>
+        </div>
+
+        <div class="back-button-container">
+            <a href="Tamagotchihome.html" class="back-button">Terug naar Home</a>
+        </div>
     </div>
 </div>
+<script src="Tamagotchi.js"></script>
+
+<audio autoplay id="audio" src="clash-royale-soundtrack-menu-b-made-with-Voicemod.mp3" loop></audio>
+<audio id="sound-feed" src="click-buttons-ui-menu-sounds-effects-button-7-203601.mp3"></audio>
+<audio id="sound-play" src="click-buttons-ui-menu-sounds-effects-button-7-203601.mp3"></audio>
+<audio id="sound-clean" src="click-buttons-ui-menu-sounds-effects-button-7-203601.mp3"></audio>
+
+<script>
+    const soundFeed = document.getElementById("sound-feed");
+    const soundPlay = document.getElementById("sound-play");
+    const soundClean = document.getElementById("sound-clean");
+
+    // Function to play a sound and restart it
+    function playSound(sound) {
+        sound.pause();
+        sound.currentTime = 0;
+        sound.play();
+    }
+
+    document.querySelector(".btn-feed").addEventListener("click", () => playSound(soundFeed));
+    document.querySelector(".btn-play").addEventListener("click", () => playSound(soundPlay));
+    document.querySelector(".btn-clean").addEventListener("click", () => playSound(soundClean));
+</script>
 </body>
 </html>
