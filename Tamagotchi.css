@@ -1,9 +1,9 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url("landscape-cartoon-scene-with-green-hills-and-white-cloud-in-summer-blue-sky-background-with-copy-space-vector.jpg");
-    background-size: cover; /* Bedekt de hele pagina */
-    background-repeat: no-repeat; /* Voorkomt herhaling van de afbeelding */
-    background-position: center; /* Centreert de achtergrond */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -13,25 +13,26 @@ body {
     height: 100vh;
 }
 
-.tamagotchi-container h1{
+.tamagotchi-container h1 {
     color: #bf0505;
-    font-family: "Showcard Gothic"
+    font-family: "Showcard Gothic";
 }
+
 .tamagotchi-container {
     margin: 20px auto;
     padding: 20px;
     background: rgba(143, 140, 140, 0.59);
     border: 2px solid #ccc;
     border-radius: 10px;
-    max-width: 500px; /* Maximale breedte van de container */
-    width: 500px; /* Vastgestelde breedte om veranderingen te voorkomen */
-    box-sizing: border-box; /* Zorgt ervoor dat padding niet de breedte beïnvloedt */
+    max-width: 500px;
+    width: 500px;
+    box-sizing: border-box;
 }
 
 .tamagotchi-img {
     width: 150px;
     height: 150px;
-    object-fit: contain; /* Zorgt ervoor dat de afbeelding niet wordt vervormd */
+    object-fit: contain;
     object-position: center;
     margin-bottom: 20px;
 }
@@ -44,7 +45,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "Showcard Gothic"
+    font-family: "Showcard Gothic";
 }
 
 .controls button:hover {
@@ -55,31 +56,35 @@ body {
     font-size: 18px;
     margin: 10px 0;
 }
-.rood p{
+
+.rood p {
     color: #bf0505;
-    font-family: "Showcard Gothic"
+    font-family: "Showcard Gothic";
 }
-.groen p{
+
+.groen p {
     color: green;
-    font-family: "Showcard Gothic"
+    font-family: "Showcard Gothic";
 }
-.paars p{
+
+.paars p {
     color: purple;
-    font-family: "Showcard Gothic"
+    font-family: "Showcard Gothic";
 }
-.gezondheid-status p{
+
+.gezondheid-status p {
     color: cornflowerblue;
-    font-family: "Showcard Gothic"
+    font-family: "Showcard Gothic";
 }
+
 .bar-container {
-    width: 100%; /* Zorgt ervoor dat de container altijd dezelfde breedte heeft */
+    width: 100%;
     height: 10px;
     background-color: #e0e0e0;
     border-radius: 5px;
     margin: 5px 0;
-    overflow: hidden; /* Voorkomt dat de bar buiten de container komt */
+    overflow: hidden;
 }
-
 
 .tamagotchi {
     display: flex;
@@ -93,6 +98,7 @@ body {
     color: purple;
     font-family: "Showcard Gothic";
 }
+
 .back-button {
     display: inline-block;
     margin: 15px auto;
@@ -108,9 +114,9 @@ body {
 .back-button:hover {
     background-color: rgba(25, 23, 23, 0.44);
 }
+
 .bar {
     height: 100%;
     transition: width 1.5s ease;
     border-radius: 5px;
 }
-
