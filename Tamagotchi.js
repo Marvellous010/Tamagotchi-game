@@ -76,6 +76,7 @@ function updateStatus() {
     }
 }
 
+
 setInterval(() => {
     hunger = Math.max(0, hunger - Math.floor(Math.random() * 15 + 1));
     sleep = Math.max(0, sleep - Math.floor(Math.random() * 15 + 1));
